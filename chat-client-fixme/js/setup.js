@@ -13,7 +13,8 @@ var getData = function() {
   $.ajax(SERVER_URL + '?order=-createdAt', {
     contentType: 'application/json',
     success: function(data) {
-      processData(data); // eslint-disable-line no-use-before-define
+      displayData(data)
+      // processData(data); // eslint-disable-line no-use-before-define
     },
     error: function(data) {
       $('#error').prepend(' oh no').append('!');
@@ -58,9 +59,11 @@ var displayData = function(data, user) {
   var i = 0;
   while (resultCount < 10 && i < data.results.length) {
 
+    // is it here ?
     newestDate = new Date(data.results[0].createdAt);
 
     if (user === data.results[i].username || !user) {
+      // Prepare the message
       var timestamp = moment(data.results[i].createdAt).format('h:mm:ss a');
       var $result = $('<li></li>').attr('data-username', data.results[i].username);
       var $message = $('<p></p>').text(data.results[i].text);
@@ -104,6 +107,11 @@ var displayData = function(data, user) {
   });
 };
 
+
+// i don't understand what they ask in this challenge
+
+
+// This the function responsible for sending message
 var postData = function(message, username) {
   $.ajax({
     url: SERVER_URL,

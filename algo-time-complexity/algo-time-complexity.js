@@ -13,7 +13,7 @@ var TimeComplexity = {
 };
 
 
-var sortedIndexOfTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var sortedIndexOfTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
 
 var sortedIndexOf = function(array, targetElement) {
   var minIndex = 0;
@@ -38,7 +38,7 @@ var sortedIndexOf = function(array, targetElement) {
 };
 
 
-var findDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var findDuplicatesTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
 
 var findDuplicates = function(string) {
   var tracker = {};
@@ -57,7 +57,7 @@ var findDuplicates = function(string) {
 };
 
 
-var bruteForcePasswordTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var bruteForcePasswordTimeComplexity =  TimeComplexity.LOGARITHMIC; // TODO: Update this constant
 
 var bruteForcePassword = function(max) {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -77,7 +77,7 @@ var bruteForcePassword = function(max) {
 };
 
 
-var hasDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var hasDuplicatesTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
 
 var hasDuplicates = function(array) {
   for (var i = 0; i < array.length; i++) {
@@ -102,7 +102,7 @@ var removeLastThreeElements = function(array) {
 };
 
 
-var increasingStepTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var increasingStepTimeComplexity =  TimeComplexity.LINEAR; // TODO: Update this constant
 
 var increasingStep = function(number) {
   for (var i = 1; i < number; i = i * 2) {
@@ -111,7 +111,7 @@ var increasingStep = function(number) {
 };
 
 
-var makeRangeTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var makeRangeTimeComplexity =  TimeComplexity.QUADRATIC; // TODO: Update this constant
 
 var makeRange = function(array) {
   array.forEach(function(item) {
